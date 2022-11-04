@@ -96,6 +96,7 @@ public class AuthController {
 	    Set<String> strRoles = signUpRequest.getRole();
 	    Set<Role> roles = new HashSet<>();
 
+	    // Getting Role, by default and null will be assigned to USER role. Admin and Mod needs to have their roles put.
 	    if (strRoles == null) {
 	      Role userRole = roleRepository.findByName(ERole.ROLE_USER)
 	          .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
