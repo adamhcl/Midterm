@@ -1,13 +1,13 @@
-package com.adam;
+package com.adam.spring.security.login;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootSecurityJwtApplication {
+public class SpringBootSecurityLoginApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootSecurityJwtApplication.class, args);
+		SpringApplication.run(SpringBootSecurityLoginApplication.class, args);
 	}
 
 }
